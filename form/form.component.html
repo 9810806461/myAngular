@@ -1,0 +1,47 @@
+<div class="imgcontainer">
+  <ion-icon class="logo" style="font-size: 40px;" name="logo-edge">
+  </ion-icon>
+  <h3>Torus</h3>
+
+</div>
+<form [formGroup]="SignupForm" (ngSubmit)="DataHandler()">
+
+  <div class="container" style="display: flex;">
+    <div>
+      <label for="uname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" formControlName="firstName">
+      <p><small class="ErrorMsg" *ngIf="firstName && firstName.invalid && (firstName.touched ||  userSubmitted)">This
+          field is not valid</small></p>
+
+      <label for="uname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Last Name" formControlName="lastName">
+      <p><small class="ErrorMsg" *ngIf="lastName && lastName.invalid && (lastName.touched || userSubmitted)">This field
+          is not valid</small></p>
+    </div>
+    <div>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" formControlName="UserName">
+      <p><small class="ErrorMsg" *ngIf="UserName && UserName.invalid && (UserName.touched|| userSubmitted)">This field
+          is not valid</small></p>
+    </div>
+    <div>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" formControlName="Password">
+      <p><small class="ErrorMsg" *ngIf="Password && Password.invalid && (Password.touched|| userSubmitted)">This field
+          is not valid</small></p>
+
+      <label for="psw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Confirm Password" formControlName="cPassword">
+      <p><small class="ErrorMsg" *ngIf="cPassword && cPassword.invalid && (cPassword.touched|| userSubmitted)">This
+          field is not valid</small></p>
+    </div>
+    <span>{{erroeMsg}}</span>
+    <div>
+      <span id="subbtn"> <button class="sub" type="submit">SignUp</button></span>
+      <span id="canbtn"><button class="can" type="submit" (click)="Cancel()">Reset</button></span>
+    </div>
+  </div>
+
+</form>
+
+<span class="psw1" (click)="Buttonclick2()">Already logged in?</span>

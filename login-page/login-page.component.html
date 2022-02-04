@@ -1,0 +1,30 @@
+
+  
+  <div class="imgcontainer">
+    <ion-icon name="logo-edge" style="font-size: 75px;">
+
+    </ion-icon>
+    <h1 >Torus</h1>
+
+  </div>
+  <form [formGroup]="LoginForm" (ngSubmit)="UserLogin()">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" formControlName="UserName" placeholder="Enter Username">
+    <p><small *ngIf= "UserName.invalid && UserName && UserName.touched">Please Enter Username</small></p>
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" formControlName="Password" placeholder="Enter Password">
+    <p><small *ngIf= "Password.invalid && Password && Password.touched">Please Enter password</small></p>
+
+
+
+    <button type="submit">Login</button>
+
+  </div>
+</form>
+<!-- <button type="submit" >Login</button> -->
+<div class="container" style="background-color:#f1f1f1">
+  <span> New user? </span><span class="user" (click)="Buttonclick()">Signup</span>
+</div>

@@ -1,0 +1,15 @@
+
+[
+      {   "service":"Financial Service",
+           "desp":"We are the people who dislike standing in lines at banks and being told to “come back after lunch break”"
+      },
+    {  "service":"Health Service",
+       "desp":"We offer subscription plans to cover all your healthcare needs. From doctor fees to dental implants and diapers to dieticians we cover it all"
+   },
+      { "service":"Educational Service",
+       "desp":"We are connected globally with all the top to bottom universities we help to give out real prospectus for the academics field"
+   },
+       {"service":"Demat Account",
+           "desp":"Trading app gives you access to the Indian stock market from the comfort of your mobile phone anytime, anywhere. The app is built with advanced features that elates the traders’ experience"
+       }
+   ]

@@ -1,0 +1,89 @@
+
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid red;display: flex;
+  background-color: black;
+  border-radius: 8px;
+justify-content: center;
+// width:  50%;
+align-items: center;
+// border: 2px solid red;
+text-align: center;
+margin: auto;
+
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+button {
+  background-color: #33b5e5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 8px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.user{
+  cursor: pointer;
+  display: flex;
+  color: #33b5e5;
+}
+.user span{
+align-items: center;
+
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+.container span{
+  display: flex;
+  justify-content: center;
+}
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  span.user{
+    display: block;
+    float: none;
+   
+  }
+}
+
+form b{
+  color: white
+}
+small{
+  color: red;
+}
